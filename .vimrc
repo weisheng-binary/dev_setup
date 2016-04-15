@@ -102,7 +102,7 @@ nnoremap <Leader><Leader>r :e ~/.vimrc<CR>
 map <Leader>rd :!perl -d %<CR>
 map <Leader>sc :!perl -c %<CR>
 map <Leader>rc :!perl %<CR>
-map <Leader>pt :%! perltidy<CR>
+map <Leader>pt :%! perltidy -pro=/home/git/regentmarkets/cpan/rc/.perltidyrc --backup-and-modify-in-place -bext=tidyup<CR>
 map <Leader>gs :Gstatus<CR>
 map <Leader>gc :Gcommit<CR>
 map <Leader>gm :Gcommit --amend<CR>
