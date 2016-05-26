@@ -17,6 +17,7 @@
 # alias cp='cp -i'
 # alias mv='mv -i'
 alias gg='git grep'
+alias gp='git push junbon HEAD'
 alias mg='grep -E -r --color=always '
 alias gs='git status'
 alias bom='cd /home/git/regentmarkets/bom'
