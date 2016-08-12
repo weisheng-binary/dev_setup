@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cp .bashrc ~;
+cp .vimrc ~;
+cp -r .vim ~;
+cp config ~/.ssh;
+cp .gitconfig ~;
