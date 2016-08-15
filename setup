@@ -1,8 +1,8 @@
 #!/bin/bash
 
 cp .bashrc ~;
+source ~/.bashrc;
 cp .vimrc ~;
 cp -r .vim ~;
-cp config ~/.ssh;
 cp .gitconfig ~;
 sudo apt-get install libterm-readline-perl-perl;
