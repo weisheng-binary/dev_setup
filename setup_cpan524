@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd /home/git/regentmarkets;
+mv cpan cpan_5.14;
+mv cpan_5.24 cpan;
+cd cpan;
+sudo rm /etc/rmg/bin;
+hash -r;
+sudo ln -s /home/git/binary-com/perl/bin /etc/rmg/bin;
+perl -v;

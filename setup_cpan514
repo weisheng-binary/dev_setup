@@ -1,0 +1,8 @@
+#!/bin/bash
+
+sudo rm /etc/rmg/bin;
+sudo ln -s /usr/bin/ /etc/rmg/bin;
+cd /home/git/regentmarkets;
+mv cpan cpan_5.24;
+mv cpan_5.14 cpan;
+hash -r;
