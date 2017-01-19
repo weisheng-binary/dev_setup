@@ -77,9 +77,9 @@ set virtualedit=block
 set wrap
 syntax on
 
-colorscheme delek
+colorscheme desert
 highlight   CursorColumn  term=NONE    cterm=none ctermbg=232
-highlight   CursorLine    term=NONE    cterm=none ctermbg=Black
+highlight   CursorLine    term=NONE    cterm=none ctermbg=232
 highlight   FoldColumn                            ctermbg=8  ctermfg=14
 highlight   Folded                                ctermbg=8  ctermfg=14
 highlight   Search        term=reverse cterm=bold ctermbg=11 ctermfg=0
