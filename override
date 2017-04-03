@@ -1,0 +1,2 @@
+dbi:Pg:dbname=chronicle;host=chronicle-for-backpricing-quants-1474575946.ap-southeast-1.elb.amazonaws.com;port=5437;user=write
+dbi:Pg:dbname=feed;host=feeddb-for-backpricing-quants-75578905.ap-southeast-1.elb.amazonaws.com;user=read;port=5433
