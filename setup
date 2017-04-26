@@ -6,3 +6,21 @@ cp .vimrc ~;
 cp -r .vim ~;
 cp .gitconfig ~;
 sudo apt-get install libterm-readline-perl-perl;
+
+touch ~/.ssh/config
+echo "Host github.com" > ~/.ssh/config
+echo "IdentityFile ~/.ssh/junbon" >> ~/.ssh/config
+chmod 644 ~/.ssh/config
+ssh-add ~/.ssh/junbon
+
+cd /home/git/regentmarkets;
+for i in perl-Volatility-Seasonality perl-Volsurface-Empirical perl-Finance-Asset perl-postgres-feeddb perl-VolSurface-IntradayFX perl-LandingCompany perl-VolSurface-Empirical perl-Price-Calculator perl-Pricing-Engine-BlackScholes perl-Pricing-Engine-European-Digital-Slope perl-Pricing-Engine-TickExpiry perl-Pricing-Engine-Intraday-Forex perl-Pricing-Engine-Digits; do
+    git clone git@github.com:regentmarkets/$i.git;
+done;
+
+cd /home/git/regentmarkets;
+for i in $(ls); do
+    cd $i;
+    git remote add junbon git@github.com:junbon/$i.git;
+    cd ..;
+done;
