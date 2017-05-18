@@ -22,5 +22,6 @@ cd /home/git/regentmarkets;
 for i in $(ls); do
     cd $i;
     git remote add junbon git@github.com:junbon/$i.git;
+    git fetch junbon;
     cd ..;
 done;

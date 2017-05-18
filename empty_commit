@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for i in bom bom-backoffice bom-transaction bom-pricing binary-websocket-api bom-rpc; do
+    cd /home/git/regentmarkets/$i;
+    git stash && git fetch origin && git checkout master && git rebase origin/master;
+    git checkout -b $1;
+    git commit --allow-empty -m 'trigger test';
+    git push junbon HEAD;
+done;
