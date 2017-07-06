@@ -6,6 +6,7 @@ cp .vimrc ~;
 cp -r .vim ~;
 cp .gitconfig ~;
 sudo apt-get install libterm-readline-perl-perl;
+sudo apt-get install jq;
 
 touch ~/.ssh/config
 echo "Host github.com" > ~/.ssh/config
