@@ -15,7 +15,7 @@ chmod 644 ~/.ssh/config
 ssh-add ~/.ssh/junbon
 
 cd /home/git/regentmarkets;
-for i in perl-Volatility-Seasonality perl-Volsurface-Empirical perl-Finance-Asset perl-postgres-feeddb perl-VolSurface-IntradayFX perl-LandingCompany perl-VolSurface-Empirical perl-Price-Calculator perl-Pricing-Engine-BlackScholes perl-Pricing-Engine-European-Digital-Slope perl-Pricing-Engine-TickExpiry perl-Pricing-Engine-Intraday-Forex perl-Pricing-Engine-Digits perl-Quant-Framework perl-Pricing-Engine-Markup; do
+for i in perl-Volatility-Seasonality perl-Volsurface-Empirical perl-Finance-Asset perl-postgres-feeddb perl-VolSurface-IntradayFX perl-LandingCompany perl-VolSurface-Empirical perl-Price-Calculator perl-Pricing-Engine-BlackScholes perl-Pricing-Engine-European-Digital-Slope perl-Pricing-Engine-TickExpiry perl-Pricing-Engine-Intraday-Forex-Base perl-Pricing-Engine-Digits perl-Quant-Framework perl-Pricing-Engine-Markup perl-Pricing-Engine-Lookback; do
     git clone git@github.com:regentmarkets/$i.git;
 done;
 
