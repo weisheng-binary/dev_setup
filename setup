@@ -10,9 +10,9 @@ sudo apt-get install jq;
 
 touch ~/.ssh/config
 echo "Host github.com" > ~/.ssh/config
-echo "IdentityFile ~/.ssh/weisheng" >> ~/.ssh/config
+echo "IdentityFile ~/.ssh/id_rsa" >> ~/.ssh/config
 chmod 644 ~/.ssh/config
-ssh-add ~/.ssh/weisheng
+ssh-add ~/.ssh/id_rsa
 
 cd /home/git/regentmarkets;
 for i in perl-Quant-Framework perl-Volatility-Seasonality perl-Finance-Asset perl-postgres-feeddb perl-LandingCompany perl-VolSurface-Empirical perl-Price-Calculator perl-Pricing-Engine-BlackScholes perl-Pricing-Engine-European-Digital-Slope perl-Pricing-Engine-TickExpiry perl-Pricing-Engine-Intraday-Forex-Base perl-Pricing-Engine-Digits perl-Pricing-Engine-Markup perl-Pricing-Engine-Lookback perl-Pricing-Engine-HighLow-Ticks perl-Pricing-Engine-Reset; do
@@ -26,7 +26,7 @@ done;
 cd /home/git/regentmarkets;
 for i in $(ls); do
     cd $i;
-    git remote add weisheng git@github.com:weisheng/$i.git;
+    git remote add weisheng git@github.com:weisheng-binary/$i.git;
     git fetch weisheng;
     cd ..;
 done;
