@@ -1,3 +1,16 @@
+version 7.0
+
+""" Vundle Entries
+" NOTE: comments after Bundle command are not allowed..
+set nocompatible               " be iMproved
+filetype off                   " required!
+
+set runtimepath+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'mileszs/ack.vim'
+
+
+
 set smartindent
 set tabstop=4
 set shiftwidth=4
