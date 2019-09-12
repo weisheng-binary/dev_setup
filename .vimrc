@@ -15,6 +15,7 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
+Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'c9s/perlomni.vim'
 Bundle 'kien/ctrlp.vim'
@@ -28,7 +29,6 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
   let g:Powerline_symbols = 'fancy'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'mileszs/ack.vim'
 Bundle 'cakebaker/scss-syntax.vim'
 
 " vim-scripts repos
