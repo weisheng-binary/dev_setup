@@ -113,3 +113,6 @@ map <Leader>gdd :Git diff<CR>
 map <Leader>gdm :Git diff %<CR>
 map <Leader>gdf :Gdiff<CR>
 map <Leader>gg :Git 
+
+nmap <F1> <Esc>
+imap <F1> <Esc>
