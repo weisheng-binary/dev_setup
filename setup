@@ -14,19 +14,19 @@ echo "IdentityFile ~/.ssh/id_rsa" >> ~/.ssh/config
 chmod 644 ~/.ssh/config
 ssh-add ~/.ssh/id_rsa
 
-cd /home/git/regentmarkets;
-for i in perl-Quant-Framework perl-Volatility-Seasonality perl-Finance-Asset perl-postgres-feeddb perl-LandingCompany perl-VolSurface-Empirical perl-Price-Calculator perl-Pricing-Engine-BlackScholes perl-Pricing-Engine-European-Digital-Slope perl-Pricing-Engine-TickExpiry perl-Pricing-Engine-Intraday-Forex-Base perl-Pricing-Engine-Digits perl-Pricing-Engine-Markup perl-Pricing-Engine-Lookback perl-Pricing-Engine-HighLow-Ticks perl-Pricing-Engine-Reset; do
-    git clone git@github.com:regentmarkets/$i.git;
-done;
+#cd /home/git/regentmarkets;
+#for i in perl-Quant-Framework perl-Volatility-Seasonality perl-Finance-Asset perl-postgres-feeddb perl-LandingCompany perl-VolSurface-Empirical perl-Price-Calculator perl-Pricing-Engine-BlackScholes perl-Pricing-Engine-European-Digital-Slope perl-Pricing-Engine-TickExpiry perl-Pricing-Engine-Intraday-Forex-Base perl-Pricing-Engine-Digits perl-Pricing-Engine-Markup perl-Pricing-Engine-Lookback perl-Pricing-Engine-HighLow-Ticks perl-Pricing-Engine-Reset; do
+#    git clone git@github.com:regentmarkets/$i.git;
+#done;
 
-for i in perl-Finance-Underlying perl-Finance-Exchange perl-Finance-Calendar perl-Finance-Contract perl-Finance-YieldCurve; do
-    git clone git@github.com:binary-com/$i.git;
-done;
+#for i in perl-Finance-Underlying perl-Finance-Exchange perl-Finance-Calendar perl-Finance-Contract perl-Finance-YieldCurve; do
+#    git clone git@github.com:binary-com/$i.git;
+#done;
 
-cd /home/git/regentmarkets;
-for i in $(ls); do
-    cd $i;
-    git remote add weisheng git@github.com:weisheng-binary/$i.git;
-    git fetch weisheng;
-    cd ..;
-done;
+#cd /home/git/regentmarkets;
+#for i in $(ls); do
+#    cd $i;
+#    git remote add weisheng git@github.com:weisheng-binary/$i.git;
+#    git fetch weisheng;
+#    cd ..;
+#done;
