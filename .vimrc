@@ -75,6 +75,7 @@ set t_Co=256
 set tags=tags;/
 set virtualedit=block
 set wrap
+set path=.,/usr/include,,**
 syntax on
 
 colorscheme desert
