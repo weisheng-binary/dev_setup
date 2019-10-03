@@ -31,7 +31,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'cakebaker/scss-syntax.vim'
 
-Plugin 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdtree'
 nmap <C-n> :NERDTreeToggle<CR>
 
 " vim-scripts repos
