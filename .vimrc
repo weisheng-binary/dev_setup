@@ -83,6 +83,7 @@ set path=.,/usr/include,,**
 syntax on
 
 colorscheme gruvbox
+set bg=dark
 highlight   CursorColumn  term=NONE    cterm=none ctermbg=232
 highlight   CursorLine    term=NONE    cterm=none ctermbg=232
 highlight   FoldColumn                            ctermbg=8  ctermfg=14
