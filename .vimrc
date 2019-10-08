@@ -120,5 +120,16 @@ map <Leader>gdm :Git diff %<CR>
 map <Leader>gdf :Gdiff<CR>
 map <Leader>gg :Git 
 
+
+“airline statusbar
+set laststatus=2
+set ttimeoutlen=50
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme=’luna’
+“In order to see the powerline fonts, adapt the font of your terminal
+“In Gnome Terminal: “use custom font” in the profile. I use Monospace regular.
+let g:airline_powerline_fonts = 1
+
+
 nmap <F1> <Esc>
 imap <F1> <Esc>
