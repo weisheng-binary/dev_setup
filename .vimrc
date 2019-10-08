@@ -49,7 +49,7 @@ nmap <C-n> :NERDTreeToggle<CR>
 filetype plugin indent on     " required!
 
 """ vimrc resumes :-)
-
+execute pathogen#infect()
 set autoindent
 set backspace=indent,eol,start
 set cindent " set smartindent
