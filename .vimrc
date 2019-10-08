@@ -45,7 +45,6 @@ nmap <C-n> :NERDTreeToggle<CR>
 "Bundle 'git://git.wincent.com/command-t.git'
 " ...
 
-colorscheme gruvbox
 
 filetype plugin indent on     " required!
 
@@ -83,7 +82,7 @@ set wrap
 set path=.,/usr/include,,**
 syntax on
 
-colorscheme desert
+colorscheme gruvbox
 highlight   CursorColumn  term=NONE    cterm=none ctermbg=232
 highlight   CursorLine    term=NONE    cterm=none ctermbg=232
 highlight   FoldColumn                            ctermbg=8  ctermfg=14
