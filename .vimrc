@@ -45,6 +45,8 @@ nmap <C-n> :NERDTreeToggle<CR>
 "Bundle 'git://git.wincent.com/command-t.git'
 " ...
 
+colorscheme gruvbox
+
 filetype plugin indent on     " required!
 
 """ vimrc resumes :-)
