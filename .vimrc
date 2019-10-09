@@ -86,14 +86,14 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_enable_perl_checker = 1
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_auto_jump = 1
+let g:ale_perl_perlcritic_profile = "/home/git/regentmarkets/cpan/rc/.perlcriticrc"
+let g:ale_perl_perltidy_profile = "/home/git/regentmarkets/cpan/rc/.perltidyrc"
+let g:ale_linters = { 'perl': ['perl','perlcritic','perltidy'] }
+let g:ale_fixers = { 'perl':['perltidy'] }
+let g:airline#extensions#ale#enabled = 1
+let g:ale_sign_error = '●' " Less aggressive than the default '>>'
+let g:ale_sign_warning = '.'
+let g:ale_lint_on_enter = 1 " Less distracting when opening a new file
 
 
 colorscheme gruvbox
