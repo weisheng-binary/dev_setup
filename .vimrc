@@ -135,10 +135,10 @@ map <Leader>gdf :Gdiff<CR>
 map <Leader>gg :Git 
 
 set noswapfile
-noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 15, 2)<CR>
-noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 15, 2)<CR>
-noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 15, 4)<CR>
-noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 15, 4)<CR>
+nnoremap <silent> <C-Right> <c-w>l
+nnoremap <silent> <C-Left> <c-w>h
+nnoremap <silent> <C-Up> <c-w>k
+nnoremap <silent> <C-Down> <c-w>j
 
 set laststatus=2
 set ttimeoutlen=50
