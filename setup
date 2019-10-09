@@ -15,7 +15,7 @@ cp ~/.vim/bundle/gruvbox/colors/gruvbox.vim ~/.vim/colors/;
 git clone https://github.com/vim-airline/vim-airline.git ~/.vim/bundle/vim-airline;
 git clone https://github.com/vim-airline/vim-airline-themes.git ~/.vim/bundle/vim-airline-themes;
 sudo apt-get install fonts-powerline;
-git clone https://github.com/vim-syntastic/syntastic.git ~/.vim/bundle/syntastic;
+git clone https://github.com/dense-analysis/ale.git ~/.vim/bundle/ale;
 
 
 
