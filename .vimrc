@@ -170,5 +170,5 @@ function! RunCmd(cmd)
       wincmd p
     endfunction
 
-    command! -nargs=1 Run     call RunCmd(<q-args>)
-    command!          RunPerl call RunCmd("/usr/bin/perl")
+    command! -nargs=1 run     call RunCmd(<q-args>)
+    command!          runperl call RunCmd("/usr/bin/perl")
