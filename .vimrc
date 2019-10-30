@@ -65,7 +65,7 @@ set incsearch
 set laststatus=2
 set list
 set listchars=tab:>-,trail:-
-set mouse=c
+set mouse=a
 set nowrap
 set number
 set ruler
