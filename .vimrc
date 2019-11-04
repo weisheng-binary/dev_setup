@@ -44,9 +44,13 @@ nmap <C-n> :NERDTreeToggle<CR>
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
 " ...
-
-
 filetype plugin indent on     " required!
+
+call vundle#begin()
+
+Plugin 'sillybun/vim-repl'
+
+call vundle#end()
 
 """ vimrc resumes :-)
 execute pathogen#infect()
