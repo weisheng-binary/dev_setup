@@ -2,12 +2,25 @@
 
 cp .bashrc ~;
 source ~/.bashrc;
+cp .vimrc ~;
+cp -r .vim ~;
 cp .gitconfig ~;
-cp .SpaceVim/vimrc ~;
-cp .SpaceVim.d/init.tomal ~;
+sudo apt-get install libterm-readline-perl-perl;
+sudo apt-get install jq;
+sudo apt-get install ack;
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree;
+git clone https://github.com/morhetz/gruvbox.git ~/.vim/bundle/gruvbox;
+mkdir ~/.vim/colors;
+cp ~/.vim/bundle/gruvbox/colors/gruvbox.vim ~/.vim/colors/;
+git clone https://github.com/vim-airline/vim-airline.git ~/.vim/bundle/vim-airline;
+git clone https://github.com/vim-airline/vim-airline-themes.git ~/.vim/bundle/vim-airline-themes;
+sudo apt-get install fonts-powerline;
+git clone https://github.com/dense-analysis/ale.git ~/.vim/bundle/ale;
 
-curl -sLf https://spacevim.org/install.sh | bash
 
+
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim;
 
 touch ~/.ssh/config
 echo "Host github.com" > ~/.ssh/config
