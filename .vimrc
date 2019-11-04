@@ -22,44 +22,8 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'scrooloose/nerdtree'
 nmap <C-n> :NERDTreeToggle<CR>
-
-
 Plugin 'sillybun/vim-repl'
-
-
 call vundle#end()   
-
-
-set runtimepath+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
-
-" My Bundles here:
-"
-" original repos on github
-Bundle 'mileszs/ack.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'c9s/perlomni.vim'
-Bundle 'kien/ctrlp.vim'
-  map <Leader>t :CtrlPBuffer<CR>
-  let g:ctrlp_map = '<C-t>'
-  let g:ctrlp_working_path_mode = 0 " don’t manage working directory.
-  let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v\c\.(git|svn)$|cgi/t/sandbox|cover_db',
-  \ 'file': '\v\c\.(swf|bak|png|gif|js|mov|ico|jpg|pdf|jrxml)$',
-  \ }
-Bundle 'Lokaltog/vim-powerline'
-  let g:Powerline_symbols = 'fancy'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'cakebaker/scss-syntax.vim'
-
-Bundle 'scrooloose/nerdtree'
-nmap <C-n> :NERDTreeToggle<CR>
-
-filetype plugin indent on     " required!
 
 """ vimrc resumes :-)
 execute pathogen#infect()
