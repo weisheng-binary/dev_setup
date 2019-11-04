@@ -147,6 +147,8 @@ let g:airline_theme="luna"
 let g:airline_powerline_fonts = 1
 let g:mapleader='r'
 nnoremap <leader>r :REPLToggle<Cr>
+set splitbelow
+
 
 nmap <F1> <Esc>
 imap <F1> <Esc>
