@@ -1,14 +1,24 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+version 7.0
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+""" Vundle Entries
+" NOTE: comments after Bundle command are not allowed..
+set nocompatible               " be iMproved
+filetype off                   " required!
 
-Plugin 'mileszs/ack.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'c9s/perlomni.vim'
-Plugin 'kien/ctrlp.vim'
+set runtimepath+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+"
+" original repos on github
+Bundle 'mileszs/ack.vim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'c9s/perlomni.vim'
+Bundle 'kien/ctrlp.vim'
   map <Leader>t :CtrlPBuffer<CR>
   let g:ctrlp_map = '<C-t>'
   let g:ctrlp_working_path_mode = 0 " don’t manage working directory.
@@ -16,14 +26,27 @@ Plugin 'kien/ctrlp.vim'
   \ 'dir':  '\v\c\.(git|svn)$|cgi/t/sandbox|cover_db',
   \ 'file': '\v\c\.(swf|bak|png|gif|js|mov|ico|jpg|pdf|jrxml)$',
   \ }
-Plugin 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/vim-powerline'
   let g:Powerline_symbols = 'fancy'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'scrooloose/nerdtree'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'cakebaker/scss-syntax.vim'
+
+Bundle 'scrooloose/nerdtree'
 nmap <C-n> :NERDTreeToggle<CR>
-Plugin 'sillybun/vim-repl'
-call vundle#end()   
+
+" vim-scripts repos
+"Bundle 'L9'
+"Bundle 'FuzzyFinder'
+"  let g:fuf_coveragefile_exclude = '\c\.\(swf\|bak\|png\|gif\|js\|mov\|ico\|jpg\|pdf\|jrxml\)$\|cgi\/t\/sandbox\|\/cover_db\/'
+"  map <Leader>t :FufBuffer<CR>
+"  map <C-t> :FufCoverageFile<CR>
+
+" non github repos
+"Bundle 'git://git.wincent.com/command-t.git'
+" ...
+
+
+filetype plugin indent on     " required!
 
 """ vimrc resumes :-)
 execute pathogen#infect()
@@ -126,4 +149,3 @@ let g:airline_powerline_fonts = 1
 
 nmap <F1> <Esc>
 imap <F1> <Esc>
-
