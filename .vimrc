@@ -66,7 +66,6 @@ set incsearch
 set laststatus=2
 set list
 set listchars=tab:>-,trail:-
-set mouse=a
 set nowrap
 set number
 set ruler
@@ -146,7 +145,8 @@ set ttimeoutlen=50
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="luna"
 let g:airline_powerline_fonts = 1
-
+let g:mapleader='r'
+nnoremap <leader>r :REPLToggle<Cr>
 
 nmap <F1> <Esc>
 imap <F1> <Esc>
