@@ -3,6 +3,8 @@
 cp .bashrc ~;
 source ~/.bashrc;
 cp .gitconfig ~;
+cp .SpaceVim/vimrc ~;
+cp .SpaceVim.d/init.tomal ~;
 
 curl -sLf https://spacevim.org/install.sh | bash
 
