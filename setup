@@ -4,6 +4,9 @@ cp .bashrc ~;
 source ~/.bashrc;
 cp .gitconfig ~;
 
+curl -sLf https://spacevim.org/install.sh | bash
+
+
 touch ~/.ssh/config
 echo "Host github.com" > ~/.ssh/config
 echo "IdentityFile ~/.ssh/id_rsa" >> ~/.ssh/config
