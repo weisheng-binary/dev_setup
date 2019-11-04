@@ -17,6 +17,22 @@ git clone https://github.com/vim-airline/vim-airline-themes.git ~/.vim/bundle/vi
 sudo apt-get install fonts-powerline;
 git clone https://github.com/dense-analysis/ale.git ~/.vim/bundle/ale;
 
+cd ~
+git clone https://github.com/vim/vim.git
+cd vim
+./configure --with-features=huge \
+            --enable-multibyte \
+            --enable-rubyinterp=yes \
+            --enable-pythoninterp=yes \
+            --enable-python3interp=yes \
+            --with-python3-config-dir=/usr/lib/python3.5/config \
+            --enable-perlinterp=yes \
+            --enable-luainterp=yes \
+            --enable-cscope \
+           --prefix=/usr/local
+make VIMRUNTIMEDIR=/usr/local/share/vim/vim81
+sudo make install
+
 
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
