@@ -19,7 +19,6 @@ Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'c9s/perlomni.vim'
 Bundle 'kien/ctrlp.vim'
-Bundle 'sillybun/vim-repl'
   map <Leader>t :CtrlPBuffer<CR>
   let g:ctrlp_map = '<C-t>'
   let g:ctrlp_working_path_mode = 0 " don’t manage working directory.
