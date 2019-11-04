@@ -1,9 +1,34 @@
-version 7.0
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-""" Vundle Entries
-" NOTE: comments after Bundle command are not allowed..
-set nocompatible               " be iMproved
-filetype off                   " required!
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'mileszs/ack.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'c9s/perlomni.vim'
+Plugin 'kien/ctrlp.vim'
+  map <Leader>t :CtrlPBuffer<CR>
+  let g:ctrlp_map = '<C-t>'
+  let g:ctrlp_working_path_mode = 0 " don’t manage working directory.
+  let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v\c\.(git|svn)$|cgi/t/sandbox|cover_db',
+  \ 'file': '\v\c\.(swf|bak|png|gif|js|mov|ico|jpg|pdf|jrxml)$',
+  \ }
+Plugin 'Lokaltog/vim-powerline'
+  let g:Powerline_symbols = 'fancy'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'scrooloose/nerdtree'
+nmap <C-n> :NERDTreeToggle<CR>
+
+
+Plugin 'sillybun/vim-repl'
+
+
+call vundle#end()   
+
 
 set runtimepath+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -34,16 +59,6 @@ Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'scrooloose/nerdtree'
 nmap <C-n> :NERDTreeToggle<CR>
 
-" vim-scripts repos
-"Bundle 'L9'
-"Bundle 'FuzzyFinder'
-"  let g:fuf_coveragefile_exclude = '\c\.\(swf\|bak\|png\|gif\|js\|mov\|ico\|jpg\|pdf\|jrxml\)$\|cgi\/t\/sandbox\|\/cover_db\/'
-"  map <Leader>t :FufBuffer<CR>
-"  map <C-t> :FufCoverageFile<CR>
-
-" non github repos
-"Bundle 'git://git.wincent.com/command-t.git'
-" ...
 filetype plugin indent on     " required!
 
 """ vimrc resumes :-)
