@@ -5,7 +5,7 @@ source ~/.bashrc;
 cp .vimrc ~;
 cp -r .vim ~;
 cp .gitconfig ~;
-TERM=xterm; export TERM
+TERM=xterm; export TERM;
 sudo apt-get install libterm-readline-perl-perl;
 sudo apt-get install jq;
 sudo apt-get install ack;
