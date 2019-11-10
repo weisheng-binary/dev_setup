@@ -81,6 +81,12 @@ set wrap
 set path=.,/usr/include,,**
 syntax on
 
+set termguicolors
+colorscheme space-vim-dark
+hi Normal     ctermbg=NONE guibg=NONE
+hi LineNr     ctermbg=NONE guibg=NONE
+hi SignColumn ctermbg=NONE guibg=NONE
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -153,10 +159,4 @@ set splitbelow
 nmap <F1> <Esc>
 imap <F1> <Esc>
 
-colorscheme space-vim-dark
-hi Comment cterm=italic
-hi Normal     ctermbg=NONE guibg=NONE
-hi LineNr     ctermbg=NONE guibg=NONE
-hi SignColumn ctermbg=NONE guibg=NONE
 
-set termguicolors
