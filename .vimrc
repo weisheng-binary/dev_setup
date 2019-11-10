@@ -69,13 +69,12 @@ set listchars=tab:>-,trail:-
 set nowrap
 set number
 set ruler
-set scrolloff=5
+
 set shiftwidth=4
 set showcmd
 set showmatch
 set smarttab
 "set statusline=%F%m%r%h%w\ [%{&ff}]\ %y\ [CHR=%b/0x%B]\ [POS=%04l,%03c(%03v)]\ [%p%%]\ [LEN=%L]\ %{fugitive#statusline()}
-set t_Co=256
 set tags=tags;/
 set virtualedit=block
 set wrap
@@ -95,13 +94,7 @@ let g:ale_sign_error = '●' " Less aggressive than the default '>>'
 let g:ale_sign_warning = '.'
 let g:ale_lint_on_enter = 1 " Less distracting when opening a new file
 
-colorscheme space-vim-dark
-hi Comment cterm=italic
-hi Normal     ctermbg=NONE guibg=NONE
-hi LineNr     ctermbg=NONE guibg=NONE
-hi SignColumn ctermbg=NONE guibg=NONE
 
-set termguicolors
 
 
 set bg=dark
@@ -159,3 +152,11 @@ set splitbelow
 
 nmap <F1> <Esc>
 imap <F1> <Esc>
+
+colorscheme space-vim-dark
+hi Comment cterm=italic
+hi Normal     ctermbg=NONE guibg=NONE
+hi LineNr     ctermbg=NONE guibg=NONE
+hi SignColumn ctermbg=NONE guibg=NONE
+
+set termguicolors
