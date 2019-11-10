@@ -4,5 +4,5 @@ cp .bashrc ~;
 source ~/.bashrc;
 cp .gitconfig ~;
 TERM=xterm; export TERM;
-curl -sLf https://spacevim.org/install.sh | bash
+curl -sLf https://spacevim.org/install.sh | bash;
 sudo apt-get install ack;
