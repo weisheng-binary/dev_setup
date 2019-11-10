@@ -3,4 +3,5 @@
 cp .bashrc ~;
 source ~/.bashrc;
 cp .gitconfig ~;
-TERM=xterm; export TERM
+TERM=xterm; export TERM;
+sudo apt-get install ack;
