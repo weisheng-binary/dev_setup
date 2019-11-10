@@ -10,6 +10,7 @@ sudo apt-get install libterm-readline-perl-perl;
 sudo apt-get install jq;
 sudo apt-get install ack;
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree;
+git clone https://github.com/liuchengxu/space-vim-dark.git ~/.vim/bundle/space-vim-dark;
 git clone https://github.com/morhetz/gruvbox.git ~/.vim/bundle/gruvbox;
 mkdir ~/.vim/colors;
 cp ~/.vim/bundle/gruvbox/colors/gruvbox.vim ~/.vim/colors/;
