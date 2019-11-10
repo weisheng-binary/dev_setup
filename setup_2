@@ -4,5 +4,20 @@ cp .bashrc ~;
 source ~/.bashrc;
 cp .gitconfig ~;
 TERM=xterm; export TERM;
+cd ~
+git clone https://github.com/vim/vim.git
+cd vim
+./configure --with-features=huge \
+            --enable-multibyte \
+            --enable-rubyinterp=yes \
+            --enable-pythoninterp=yes \
+            --enable-python3interp=yes \
+            --with-python3-config-dir=/usr/lib/python3.5/config \
+            --enable-perlinterp=yes \
+            --enable-luainterp=yes \
+            --enable-cscope \
+           --prefix=/usr/local
+make VIMRUNTIMEDIR=/usr/local/share/vim/vim81
+sudo make install
 curl -sLf https://spacevim.org/install.sh | bash;
 sudo apt-get install ack;
