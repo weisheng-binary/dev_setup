@@ -1,1 +1,6 @@
+#!/bin/bash
 
+cp .bashrc ~;
+source ~/.bashrc;
+cp .gitconfig ~;
+TERM=xterm; export TERM
