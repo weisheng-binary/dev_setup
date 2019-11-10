@@ -77,35 +77,7 @@ set virtualedit=block
 set wrap  
 set path=.,/usr/include,,**
 set noswapfile  
-set splitbelow  
-set autoindent  
-set backspace=indent,eol,start
-set cindent " set smartindent
-set cmdheight=2 
-set cursorcolumn
-set number                                                                                                                                                            
-set cursorline
-set errorformat=\"../../%f\"\\,%*[^0-9]%l:\ %m
-set expandtab
-set hidden
-set hlsearch
-set ignorecase
-set incsearch   
-set laststatus=2
-set list  
-set listchars=tab:>-,trail:-
-set nowrap
-set ruler 
-set scrolloff=5 
-set shiftwidth=4
-set showcmd     
-set showmatch   
-set smarttab    
-set tags=tags;/ 
-set virtualedit=block
-set wrap  
-set path=.,/usr/include,,**
-set noswapfile  
+
 ""ale setting   
 let g:ale_perl_perlcritic_profile = "/home/git/regentmarkets/cpan/rc/.perlcriticrc"
 let g:ale_perl_perltidy_profile = "/home/git/regentmarkets/cpan/rc/.perltidyrc"
