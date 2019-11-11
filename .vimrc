@@ -48,6 +48,7 @@ let g:deoplete#enable_at_startup = 1
  
 ""custom setting
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+set term=xterm-256color
 set splitbelow  
 set autoindent  
 set backspace=indent,eol,start
