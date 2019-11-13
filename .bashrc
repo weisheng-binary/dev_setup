@@ -29,4 +29,4 @@ alias ws='cd /home/git/regentmarkets/binary-websocket-api'
 alias qf='cd /home/git/regentmarkets/perl-Quant-Framework'
 alias bo='cd /home/git/regentmarkets/bom-backoffice'
 alias tidy='perltidy -pro=/home/git/regentmarkets/cpan/rc/.perltidyrc --backup-and-modify-in-place -bext=tidyup'
-alias python=python3.5
+alias python=python3.7
