@@ -30,3 +30,4 @@ alias qf='cd /home/git/regentmarkets/perl-Quant-Framework'
 alias bo='cd /home/git/regentmarkets/bom-backoffice'
 alias tidy='perltidy -pro=/home/git/regentmarkets/cpan/rc/.perltidyrc --backup-and-modify-in-place -bext=tidyup'
 alias python=python3.7
+alias python3=python3.7
