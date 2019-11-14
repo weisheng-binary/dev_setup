@@ -16,7 +16,6 @@ Plugin 'roxma/vim-hug-neovim-rpc'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'dense-analysis/ale'
 Plugin 'kien/ctrlp.vim'
-Plugin 'ervandew/supertab'
 let g:ctrlp_map = '<C-t>'
 let g:ctrlp_working_path_mode = 0 " don’t manage working directory.
 let g:ctrlp_custom_ignore = {
@@ -93,5 +92,3 @@ let g:ale_fixers = { 'perl':['perltidy'] }
 let g:ale_sign_error = '●' " Less aggressive than the default '>>'
 let g:ale_sign_warning = '.'
 let g:ale_lint_on_enter = 1 " Less distracting when opening a new file
-
-let g:SuperTabDefaultCompletionType = "<c-n>"
