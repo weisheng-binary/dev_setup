@@ -78,6 +78,11 @@ set virtualedit=block
 set wrap  
 set path=.,/usr/include,,**
 set noswapfile  
+nnoremap <silent> <C-Right> <c-w>l
+nnoremap <silent> <C-Left> <c-w>h
+nnoremap <silent> <C-Up> <c-w>k
+nnoremap <silent> <C-Down> <c-w>j
+
 
 ""ale setting   
 let g:ale_perl_perlcritic_profile = "/home/git/regentmarkets/cpan/rc/.perlcriticrc"
