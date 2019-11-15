@@ -10,9 +10,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'liuchengxu/space-vim-dark'
-Plugin 'Shougo/deoplete.nvim'
-Plugin 'roxma/nvim-yarp'
-Plugin 'roxma/vim-hug-neovim-rpc'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'dense-analysis/ale'
 Plugin 'kien/ctrlp.vim'
@@ -43,8 +40,6 @@ hi Normal     ctermbg=NONE guibg=NONE
 hi LineNr     ctermbg=NONE guibg=NONE
 hi SignColumn ctermbg=NONE guibg=NONE
  
-""autocompletion
-let g:deoplete#enable_at_startup = 1
  
 ""custom setting
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
