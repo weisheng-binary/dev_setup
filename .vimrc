@@ -115,3 +115,7 @@ let g:ale_lint_on_enter = 1 " Less distracting when opening a new file
 
 
 ""vimrepl setup
+let mapleader ="r"
+let g:repl_cursor_down = 1
+nnoremap <leader>w :REPLToggle<Cr>
+let g:sendtorepl_invoke_key = "<leader>r"
