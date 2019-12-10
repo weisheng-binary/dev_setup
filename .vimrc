@@ -22,7 +22,7 @@ let g:ctrlp_custom_ignore = {
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'Shougo/neocomplete.vim' 
- 
+Plugin 'aminroosta/vim-repl' 
 let g:Powerline_symbols = 'fancy'
 nmap <C-n> :NERDTreeToggle<CR>
  
@@ -112,3 +112,6 @@ let g:ale_fixers = { 'perl':['perltidy'] }
 let g:ale_sign_error = '●' " Less aggressive than the default '>>'
 let g:ale_sign_warning = '.'
 let g:ale_lint_on_enter = 1 " Less distracting when opening a new file
+
+
+""vimrepl setup
