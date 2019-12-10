@@ -3,7 +3,6 @@
 cp .bashrc ~;
 source ~/.bashrc;
 cp .vimrc ~;
-cp .replyrc ~;
 cp -r .vim ~;
 cp .gitconfig ~;
 TERM=xterm; export TERM;
