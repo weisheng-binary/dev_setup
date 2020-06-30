@@ -26,7 +26,7 @@ sudo apt-get install perlconsole
 sudo apt-get install lua5.1 liblua5.1-dev luajit libluajit-5.1 python-dev python3-dev ruby-dev  libperl-dev libncurses5-dev libatk1.0-dev libx11-dev libxpm-dev libxt-dev
 
 cd ~
-git clone https://github.com/vim/vim.git
+git clone https://github.com/vim/vim.git -b v8.2.1038
 cd vim
 ./configure --with-features=huge \
            --enable-multibyte \
