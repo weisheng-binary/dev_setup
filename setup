@@ -56,7 +56,7 @@ for i in perl-Quant-Framework perl-Volatility-Seasonality perl-Finance-Asset per
 done;
 
 for i in chef perl-feed-index-steprng perl-Feed-Index-JumpDiffusion perl-feed-index-volatility perl-Feed-Index-RangeBreak; do
-    git clone git@github.com:binary-com/$i.git;
+    git clone git@github.com:regentmarkets/$i.git;
 done;
 
 cd /home/git/regentmarkets;
